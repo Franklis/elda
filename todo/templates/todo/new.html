@@ -1,0 +1,692 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+      
+      
+      
+        <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+
+    <!-- Bootstrap CSS -->
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+           
+
+    
+        <header class="site-header">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#">To-Do</a>
+            
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                  <li class="nav-item active">
+                    <a class="nav-link" href="{% url 'index' %}">Home <span class="sr-only">(current)</span></a>
+		   <a class="nav-link" href="{% url 'home' %}">Upload <span class="sr-only">(current)</span></a>
+		   <a class="nav-link" href="{% url 'new' %}">Index <span class="sr-only">(current)</span></a>
+		   <a class="nav-link" href="{% url 'base' %}">Cijfer <span class="sr-only">(current)</span></a>
+                  </li>
+                </ul>
+            </div>
+        </nav>                  <!-- Navbar Right Side -->
+         <br><br><br>         
+    </head>
+    <body>
+
+
+<style type="text/css">
+body {
+	background-color: #f5f0ec;
+}
+</style>
+<head>
+<style>
+ul {
+    list-style-type: none;
+    margin: 2px solid #333;
+    padding: 0;
+    overflow: hidden;
+    background-color: #4CAF50;
+}
+
+li {
+    float: left;
+    border-right:2px solid #FFA500;
+}
+
+li:last-child {
+    border-right: 2px solid #FFA500;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: lightgray;
+}
+
+.active {
+    background-color: #4CAF50;
+}
+</style>
+
+<center>
+
+
+<div id="sidebar">
+<figure>
+
+<img src="https://www.thoughtco.com/thmb/C_LAARUELK2H-zF2xyujIAA9pEI=/768x0/filters:no_upscale():max_bytes(150000):strip_icc()/pie-chart-102416304-59e21f97685fbe001136aa3e.jpg" style="float: right"width="200px" height="140px">
+
+
+
+<img src="https://www.thoughtco.com/thmb/O5LtLKzEzqhBjfusByTZ0Ne0eSc=/768x0/filters:no_upscale():max_bytes(150000):strip_icc()/histo-56b7494f5f9b5829f8380daa.GIF" style="float: left" width="200px" alt="LOGO">
+
+</figure>
+
+<FONT FACE="bold ARIAL" SIZE=4 COLOR="green">
+<center>
+<font color="green">
+<p id="demo"></p>
+
+<style>
+            .round {
+                border-radius: 50%;
+                overflow: hidden;
+                width: 250px;
+                height: 175px;
+            }
+            .round img {
+                display: block;
+            /* Stretch 
+                  height: 100%;
+                  width: 100%; */
+            min-width: 100%;
+            min-height: 100%;
+            }
+        </style>
+    </head>
+
+<meta charset="utf-8">
+
+
+<head>
+<title>VEFRA Consultancy</title>
+</head>
+<body a link ="black" vlink="black">
+<center><h3> Calculeer Index-cijfers hieronder!</h3></center>
+
+
+<center>
+<p> Welkom op onze website</p></center>
+
+
+
+
+
+
+
+<center>
+
+
+</font>
+
+
+
+
+
+
+
+
+<center>
+<font size="3">
+<style>
+table, th, td {
+    border: 1px solid darkgreen;
+}
+</style>
+
+<table bgcolor=beige>
+
+<tr><th>Uw BMI</th></tr>
+
+<tr><td><center>
+<center>
+<p> Heb je een Gezond gewicht? (Note: Betekenis is volgens de WHO)</p>
+<form name="umiForm">
+Uw gewicht(kg): <input type="text" name="weight" size="10">&ensp;
+Uw lengte(cm): <input type="text" name="height" size="10">&ensp;
+<input type="button" value="Bereken BMI" onClick="calculateUmi()"><br /><br />
+Uw BMI: <input type="text" name="umi" size="10">&ensp;Betekenis uw BMI: <input type="text" name="meaning" size="28">&ensp;
+<input type="reset" value="Reset" />
+</form>
+
+
+
+
+<script language="JavaScript">
+<!--
+function calculateUmi() {
+var weight = document.umiForm.weight.value
+var height = document.umiForm.height.value
+if(weight > 0 && height > 0){	
+var finalUmi = weight/(height/100*height/100)
+document.umiForm.umi.value = Math.round(finalUmi)
+if(finalUmi < 18.5){
+document.umiForm.meaning.value = "U hebt Ondergewicht."
+}
+if(finalUmi > 18.5 && finalUmi < 25){
+document.umiForm.meaning.value = "U hebt Normaal gewicht."
+}
+if(finalUmi > 25 && finalUmi < 30){
+document.umiForm.meaning.value = "U hebt Overgewicht."
+}
+if(finalUmi > 30 && finalUmi < 35){
+document.umiForm.meaning.value = "U hebt Ernstig Overgewicht."
+}
+if(finalUmi > 35){
+document.umiForm.meaning.value = "U hebt Zeer Ernstig Overgewicht."
+}
+
+}
+else{
+alert("Please Fill in everything correctly")
+}
+}
+//-->
+</script>
+
+</td></tr>
+</table><br>
+
+
+
+<hr color="green">
+<hr color="yellow">
+<hr color="red">
+
+<BR><BR>
+
+
+
+
+
+
+
+
+
+<center>
+<font size="3">
+<style>
+table, th, td {
+    border: 1px solid darkgreen;
+}
+</style>
+
+<table bgcolor=beige>
+
+<tr><th>Enkelvoudige & Samengestelde Indexcijfers</td></tr>
+
+<tr><td><center>
+<p> Directe & Indirecte Methode volgens Laspeyres</p>
+<form name="bmiForm">
+Art A Pb: <input type="text" name="weight" size="10">
+Art A Pv: <input type="text" name="height" size="10">&ensp;
+Art A Hb: <input type="text" name="we" size="10">
+Art A Hv: <input type="text" name="de" size="10"><BR><BR>
+Art B Pb: <input type="text" name="bpo" size="10">
+Art B Pv: <input type="text" name="bpn" size="10">&ensp;
+Art B Hb: <input type="text" name="bqo" size="10">
+Art B Hv: <input type="text" name="dqo" size="10"><br><br>
+
+<input type="button" value="Bereken Index-cijfers" onClick="calculateBmi()"><br><br>
+EPI(A): <input type="text" name="pabmi" size="4">&ensp;
+EHI(A): <input type="text" name="habmi" size="4">&ensp;
+EWI(A): <input type="text" name="wabmi" size="4">&ensp;&ensp;<br><br>
+EPI(B): <input type="text" name="pbbmi" size="4">&ensp;&ensp;
+EHI(B): <input type="text" name="hbbmi" size="4">&ensp;&ensp;
+EWI(B): <input type="text" name="wbbmi" size="4">&ensp;<br><br>
+<p> Samengestelde Index-cijfers volgens de Directe methode</p>
+SGPI: <input type="text" name="bmi" size="4">&ensp;&ensp;
+SGHI: <input type="text" name="bm" size="4">&ensp;
+SGWI: <input type="text" name="bmo" size="4">&ensp;<br /><br />
+<p> Samengestelde Index-cijfers volgens de Indirecte methode:</p><BR>
+
+SGPI: <input type="text" name="meaning" size="4">&ensp;&ensp;
+SGHI: <input type="text" name="ning" size="4">&ensp;&ensp;
+SGWI: <input type="text" name="ming" size="4"><BR><BR>
+&ensp;&ensp;
+SGPI(Paasche): <input type="text" name="lop" size="4">&ensp;&ensp;
+SGPI(Fisher): <input type="text" name="lp" size="4">&ensp;&ensp;
+SGHI(Paasche): <input type="text" name="pol" size="4">&ensp;&ensp;
+SGHI(Fisher: <input type="text" name="pl" size="4">&ensp;&ensp;<BR><BR>
+
+<input type="reset" value="Reset" />
+</form>
+
+
+
+<script language="JavaScript">
+<!--
+function calculateBmi() {
+var weight = document.bmiForm.weight.value
+var height = document.bmiForm.height.value
+var we = document.bmiForm.we.value
+var de = document.bmiForm.de.value
+var bpo = document.bmiForm.bpo.value
+var bpn = document.bmiForm.bpn.value
+var bqo = document.bmiForm.bqo.value
+var dqo = document.bmiForm.dqo.value
+
+if(weight > 0 && height > 0 && we > 0){	
+var finalHabmi = (de*100)/we
+document.bmiForm.habmi.value = Math.round(finalHabmi)
+var finalPabmi = (height*100)/weight
+document.bmiForm.pabmi.value = Math.round(finalPabmi)
+var finalWabmi = (height*de*100)/(weight*we)
+document.bmiForm.wabmi.value = Math.round(finalWabmi)
+
+var finalHbbmi = (dqo*100)/bqo
+document.bmiForm.hbbmi.value = Math.round(finalHbbmi)
+var finalPbbmi = (bpn*100)/bpo
+document.bmiForm.pbbmi.value = Math.round(finalPbbmi)
+var finalWbbmi = (bpn*dqo*100)/(bpo*bqo)
+document.bmiForm.wbbmi.value = Math.round(finalWbbmi)
+
+
+
+var finalMeaning = (finalPabmi*weight*we + finalPbbmi*bpo*bqo)/(weight*we + bpo*bqo)
+document.bmiForm.meaning.value = Math.round(finalMeaning)
+
+var finalNing = (finalHabmi*weight*we + finalHbbmi*bpo*bqo)/(weight*we + bpo*bqo)
+document.bmiForm.ning.value = Math.round(finalNing)
+
+var finalMing = (finalWabmi*weight*we + finalWbbmi*bpo*bqo)/(weight*we + bpo*bqo)
+document.bmiForm.ming.value = Math.round(finalMing)
+
+var finalLop = (height*de + bpn*dqo)*100/(weight*de + bpo*dqo)
+document.bmiForm.lop.value = Math.round(finalLop)
+
+
+var finalLp = Math.sqrt(finalLop*finalMeaning)
+document.bmiForm.lp.value = Math.round(finalLp)
+
+
+
+var finalPol = (height*de + bpn*dqo)*100/(height*we + bpn*bqo)
+document.bmiForm.pol.value = Math.round(finalPol)
+
+var finalPl = Math.sqrt(finalPol*finalNing)
+document.bmiForm.pl.value = Math.round(finalPl)
+
+
+
+
+var finalBmi = (height*we+bpn*bqo)*100/(weight*we + bpo*bqo) 
+var finalBm = (de*weight+bpo*dqo)*100/(weight*we + bpo*bqo) 
+var finalBmo = (de*height + bpn*dqo) *100/(we*weight + bpo*bqo)
+document.bmiForm.bmi.value = Math.round(finalBmi)
+document.bmiForm.bm.value = Math.round(finalBm)
+document.bmiForm.bmo.value = Math.round(finalBmo)
+
+
+}
+else{
+alert("Vul de gegevens volledig in. Succes. Juf Kross")
+}
+}
+//-->
+</script>
+</td>
+
+</tr>
+</table><br>
+
+
+</font>
+
+<hr color="green">
+<hr color="yellow">
+<hr color="red">
+<BR><BR>
+<center>
+<font size="3">
+<style>
+table, th, td {
+    border: 1px solid darkgreen;
+}
+</style>
+
+<table bgcolor=beige>
+
+<tr><th>De Indirecte Methode met enkelvoudige Indexcijfers</th></tr>
+
+<tr><td><head>
+
+
+<center>
+<p> Indirecte Methode volgens Laspeyres</p>
+<form name="grForm">
+Art A Pb: <input type="text" name="pab" size="10">&ensp;
+Art A Hb: <input type="text" name="hab" size="10">&ensp;
+
+Art B Pb: <input type="text" name="pbb" size="10">&ensp;
+Art B Hb: <input type="text" name="hbb" size="10">&ensp;<br><br>
+
+
+EPI(A): <input type="text" name="pia" size="10">&ensp;
+EHI(A): <input type="text" name="hia" size="10">&ensp;
+EWI(A): <input type="text" name="wia" size="10">&ensp;<br><br>
+EPI(B): <input type="text" name="pib" size="10">&ensp;
+EHI(B): <input type="text" name="hib" size="10">&ensp;
+EWI(B): <input type="text" name="wib" size="10">&ensp;<br><br>
+
+<p>Uitkomst Indirecte Methode als enkelvoudige Indices gegeven zijn:</p>
+<input type="button" value="Index-cijfers" onClick="calculateGr()">&ensp;<br><br>
+SGPI: <input type="text" name="gr" size="4">&ensp;&ensp;
+SGHI: <input type="text" name="mik" size="4">&ensp;&ensp;
+SGWI: <input type="text" name="mil" size="4"><br /><br />
+<input type="reset" value="Reset" />
+</form>
+
+
+
+
+
+<script language="JavaScript">
+<!--
+function calculateGr() {
+var pab = document.grForm.pab.value
+var hab = document.grForm.hab.value
+
+var pbb = document.grForm.pbb.value
+var hbb = document.grForm.hbb.value
+
+var pia = document.grForm.pia.value
+var pib = document.grForm.pib.value
+var hia = document.grForm.hia.value
+var hib = document.grForm.hib.value
+var wia = document.grForm.wia.value
+var wib = document.grForm.wib.value
+
+
+if(pab > 0 && hab > 0 && pbb > 0){	
+var finalGr = (pab*hab*pia + pbb*hbb*pib) / (pab*hab + pbb*hbb) 
+document.grForm.gr.value = Math.round(finalGr)
+
+if(hab>0){
+var finalMik = (pab*hab*hia + pbb*hbb*hib) / (pab*hab + pbb*hbb) 
+document.grForm.mik.value = Math.round(finalMik)
+
+if(pab>0){
+var finalMil = (pab*hab*wia + pbb*hbb*wib) / (pab*hab + pbb*hbb) 
+document.grForm.mil.value = Math.round(finalMil)
+
+
+
+}
+}
+}
+else{
+alert("Vul de gegevens volledig in. Succes. Juf Kross")
+}
+}
+//-->
+</script>
+</td></tr>
+</table><br>
+
+
+
+
+
+
+<style style="text/css">
+.horizontally {
+ height: 50px;	
+ overflow: hidden;
+ position: relative;
+ background: green;
+ color: orange;
+ border: 2px solid orange;
+}
+.horizontally p {
+ position: absolute;
+ width: 100%;
+ height: 100%;
+ margin: 0;
+ line-height: 50px;
+ text-align: center;
+ /* Starting position */
+ -moz-transform:translateX(50%);
+ -webkit-transform:translateX(50%);	
+ transform:translateX(50%);
+ /* Apply animation to this element */	
+ -moz-animation: horizontally 20s linear infinite alternate;
+ -webkit-animation: horizontally 20s linear infinite alternate;
+ animation: horizontally 20s linear infinite alternate;
+}
+/* Move it (define the animation) */
+@-moz-keyframes horizontally {
+ 0%   { -moz-transform: translateX(50%); }
+ 100% { -moz-transform: translateX(-50%); }
+}
+@-webkit-keyframes horizontally {
+ 0%   { -webkit-transform: translateX(50%); }
+ 100% { -webkit-transform: translateX(-50%); }
+}
+@keyframes horizontally {
+ 0%   { 
+ -moz-transform: translateX(50%); /* Browser bug fix */
+ -webkit-transform: translateX(50%); /* Browser bug fix */
+ transform: translateX(50%); 		
+ }
+ 100% { 
+ -moz-transform: translateX(-50%); /* Browser bug fix */
+ -webkit-transform: translateX(-50%); /* Browser bug fix */
+ transform: translateX(-50%); 
+ }
+}
+</style>
+
+
+<div class="horizontally">
+<FONT FACE="Bold" SIZE=4 COLOR="orange">
+<p>Wij helpen ook docenten om APP's te ontwikkelen Contact ons 00597 8865979</p>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<BR><BR>
+<center>
+<font size="3" color="blue">
+<style>
+table, th, td {
+    border: 1px solid darkgreen;
+}
+</style>
+
+<table bgcolor=beige>
+
+<tr><th>Indexcijfer Arbeidsproductiviteit </th></tr>
+
+<td><head>
+
+
+<center>
+<p> (Indexcijfer Productie / Indexcijfer Mensuren) * 100</p>
+<form name="nijForm">
+Productie Basis: <input type="text" name="weight" size="10">&ensp;
+Mensuren Basis: <input type="text" name="height" size="10"><BR><BR>
+Productie Verslagperiode: <input type="text" name="we" size="10"><BR><BR>
+Mensuren Verslagperiode: <input type="text" name="bpo" size="10"><BR><BR>
+
+<input type="button" value="Bereken Index" onClick="calculateNij()"><br /><br />
+Index: <input type="text" name="nij" size="15"><BR><BR>
+Stijging in %: <input type="text" name="alpha" size="12">
+Daling in %: <input type="text" name="pha" size="12">&ensp;<BR><BR>
+<input type="reset" value="Reset" />
+</form>
+
+
+
+
+
+<script language="JavaScript">
+<!--
+function calculateNij() {
+var weight = document.nijForm.weight.value
+var height = document.nijForm.height.value
+var we = document.nijForm.we.value
+var bpo = document.nijForm.bpo.value
+if(weight > 0 && height > 0 && we > 0){	
+var finalNij = (we/weight)*100/(bpo/height) 
+document.nijForm.nij.value = Math.round(finalNij)
+if(finalNij >= 100){
+document.nijForm.alpha.value = Math.round(finalNij-100 )
+}
+if(finalNij < 100){
+document.nijForm.pha.value = Math.round(finalNij-100 )
+}
+}
+else{
+alert("Vul de gegevens volledig in. Succes. Juf Kross")
+}
+}
+//-->
+</script></td></tr>
+</table><br>
+
+
+<BR>
+
+<head>
+
+<hr color="green">
+<hr color="yellow">
+<hr color="red">
+
+<center>
+<BR><BR>
+<font size="3">
+<style>
+table, th, td {
+    border: 1px solid darkgreen;
+}
+</style>
+
+<table bgcolor=beige>
+
+<tr><th>Koopkracht</td><th>Index Reeel Loon </th></tr>
+
+<tr><td><center>
+<p> CPI is Consumenten Prijs Index<br> CPI(juli 2020 = 197.6)</p>
+<form name="frForm">
+Nominaal Loon: <input type="text" name="weight" size="10">;
+<br><BR>
+CPI: <input type="text" name="eig" size="10">;
+<br><BR>
+
+<input type="button" value="Bereken Koopkracht" onClick="calculateFr()">&ensp;
+Reeel Loon (Koopkracht): <input type="text" name="fr" size="15"><br /><br />
+<BR><BR>
+<input type="reset" value="Reset" />
+</form>
+
+
+
+
+
+<script language="JavaScript">
+<!--
+function calculateFr() {
+var weight = document.frForm.weight.value
+var eig = document.frForm.eig.value
+if(weight > 0){	
+var finalFr = (weight*100)/eig 
+document.frForm.fr.value = Math.round(finalFr)
+
+}
+else{
+alert("Vul de gegevens volledig in. Succes. Juf Kross")
+}
+}
+//-->
+</script>
+</td>
+
+<td><head>
+
+
+<center>
+<p> ((Index Nominaal loon / CPI) * 100<br> CPI(juli 2020 = 197.6)</p>
+<form name="lijForm">
+Nominaal Loon Basis: <input type="text" name="weight" size="10">&ensp;
+Nominaal Loon Verslagperiode: <input type="text" name="height" size="10">
+<BR><BR>&ensp;
+CPI: <input type="text" name="hei" size="10"><BR><BR>
+
+<input type="button" value="Bereken Index Reeel Loon" onClick="calculateLij()"><br /><br />
+Index: <input type="text" name="lij" size="15"><BR><BR>
+Stijging in %: <input type="text" name="alpha" size="12">
+Daling in %: <input type="text" name="pha" size="12">&ensp;<BR><BR>
+<input type="reset" value="Reset" />
+</form>
+
+
+
+
+
+<script language="JavaScript">
+<!--
+function calculateLij() {
+var weight = document.lijForm.weight.value
+var height = document.lijForm.height.value
+var hei = document.lijForm.hei.value
+
+if(weight > 0 && height > 0){	
+var finalLij = ((height/weight)*100/hei)*100 
+document.lijForm.lij.value = Math.round(finalLij)
+if(finalLij >= 100){
+document.lijForm.alpha.value = Math.round(finalLij-100 )
+}
+if(finalLij < 100){
+document.lijForm.pha.value = Math.round(finalLij-100 )
+}
+}
+else{
+alert("Vul de gegevens volledig in. Succes. Juf Kross")
+}
+}
+//-->
+</script></td></tr>
+</table><br>
+
+</body>
+
+</BR>
+</html>
