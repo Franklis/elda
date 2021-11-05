@@ -5,6 +5,7 @@ from  todo import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('todo.urls')),
+    path('index/', views.index, name="Home"),
     path('home/',views.home, name="home"),
     path('new/',views.new, name="new"),
     path('base/',views.base, name="base"),
