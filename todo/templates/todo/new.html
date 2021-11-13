@@ -182,20 +182,20 @@ var weight = document.umiForm.weight.value
 var height = document.umiForm.height.value
 if(weight > 0 && height > 0){	
 var finalUmi = weight/(height/100*height/100)
-document.umiForm.umi.value = Math.round(finalUmi)
-if(finalUmi < 18.5){
+document.umiForm.umi.value = finalUmi
+if(finalUmi <=18.5){
 document.umiForm.meaning.value = "U hebt Ondergewicht."
 }
-if(finalUmi > 18.5 && finalUmi < 25){
+if(finalUmi >= 18.5 && finalUmi <= 25){
 document.umiForm.meaning.value = "U hebt Normaal gewicht."
 }
-if(finalUmi > 25 && finalUmi < 30){
+if(finalUmi >= 25 && finalUmi <= 30){
 document.umiForm.meaning.value = "U hebt Overgewicht."
 }
-if(finalUmi > 30 && finalUmi < 35){
+if(finalUmi >= 30 && finalUmi <= 35){
 document.umiForm.meaning.value = "U hebt Ernstig Overgewicht."
 }
-if(finalUmi > 35){
+if(finalUmi >= 35){
 document.umiForm.meaning.value = "U hebt Zeer Ernstig Overgewicht."
 }
 
