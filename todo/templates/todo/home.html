@@ -27,9 +27,9 @@
                 <div class="collapse navbar-collapse" id="navbarToggle">
                   <div class="navbar-nav mr-auto" style="color:black">
 		    <a class="nav-item nav-link" style="color:blue" href="{% url 'Home' %}">Home</a>
-                    <a class="nav-item nav-link" style="color:blue" href="{% url 'home' %} ">Upload</a>
+                    <a class="nav-item nav-link" style="color:blue" href="{% url 'home' %} ">IMEAO-MBO</a>
                     <a class="nav-item nav-link" style="color:blue" href="{% url 'new' %} ">Index</a>
-                    <a class="nav-item nav-link" style="color:blue" href="{% url 'base' %} ">Cijfers</a>
+                    <a class="nav-item nav-link" style="color:blue" href="{% url 'base' %} ">Wiskunde</a>
                   </div>
                   </div>
             </nav>
@@ -37,626 +37,429 @@
          <br><br><br> 
 
     </head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type="text/css">
+    body {
+        background-color: white;
+    }
+    </style>
+    <html>
+    <head>
+    <style>
+    ul {
+        list-style-type: none;
+        margin: 2px solid #333;
+        padding: 0;
+        overflow: hidden;
+        background-color: #4CAF50;
+    }
+    
+    li {
+        float: left;
+        border-right:2px solid #FFA500;
+    }
+    
+    li:last-child {
+        border-left: 0px solid #FFA500;
+    }
+    
+    li a {
+        display: block;
+        color: black;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+    
+    li a:hover:not(.active) {
+        background-color: Lightgray;
+    }
+    
+    .active {
+        background-color: #4CAF50;
+    }
+    </style>
+    </head>
+    </head>
+    
+    
+    
+    <div class="dropdown">
+    <button class="dropbtn">Curr:</button>
+      <div class="dropdown-content">
+    <a href="#"></a>
+    </div>
+    </div>
+    
+    <div class="dropdown">
+      <button class="dropbtn">e-Platform</button>
+      <div class="dropdown-content">
+    <a href="https://www.youtube.com/embed/gBfPI8lI2QM" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen target="me1">Video-Classroom</a>
+    <a href="https://www.youtube.com/embed/58L1pL9LqJM" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen target="me1">Video-MOODLE</a>
+    <a href="https://www.youtube.com/embed/wJNNmYMM65Q" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen target="me1">Video-Canvas</a>
+    <a href="https://www.youtube.com/embed/6Erq2dzB7gA" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen target="me1">Video-Exam.net</a>
+    
+    </div>
+    </div>
+    
+    <div class="dropdown">
+      <button class="dropbtn">Basis</button>
+      <div class="dropdown-content">
+    <a href="https://docs.google.com/document/d/e/2PACX-1vR81XSVPc83i91XhgUlnalBlDPr82Oc1yi5Q7c4t5cHJMnOccqoQy9xmLtja1TAEPhE4u9NnnfITLnf/pub" target="me1">Curr. Basisjaar</a>
+    
+    
+    </div>
+    </div>
+    
+    
+    <div class="dropdown">
+      <button class="dropbtn">Economie</button>
+      <div class="dropdown-content">
+    <a href="https://www.youtube.com/embed/b_0N2IV6AQk" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen target="me1">Video-BAD</a>
+    <a href="https://www.youtube.com/embed/zUG0tcHks34" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen target="me1">Video-AA</a>
+    <a href="https://docs.google.com/document/d/e/2PACX-1vQFev1OEMA9mVjUeHBGEycLRxMk01Jgr-ycvix5he5gXILjx-y9Weryauua9EVsOxBfbyVC28Lc2lMl/pub" target="me1">OG-AA2</a>
+    <a href="https://docs.google.com/document/d/e/2PACX-1vSSfC9mGGuCSrcm7Z8URso2HgJjiB02VPfCPLJH8XDe_z_HbMcjPdu1ctvFvXRAwslyfIJgbLwnuYPA/pub" target="me1">OG-BAD2</a>
+    <a href="https://docs.google.com/document/d/e/2PACX-1vSbBFTpF05a4IDc2T7NqBu6PU-0IkxW7nBsePterMLqopIbvpdkFW-vj9T3UHB4l0YtFUX2U6esA53i/pub" target="me1">AA2 &amp; BAD2</a>
+    <a href="https://docs.google.com/document/d/e/2PACX-1vT5npCeZKK5DSL8BIMPUErmwVnwT78brBgGz50X4jfN3iNYfFqK2jWBZyzguuIgLAl8b3aD4dYVV3JN/pub" target="me1">AA3 &amp; BAD3</a>
+    <a href="https://docs.google.com/document/d/e/2PACX-1vSzt68X1CQBsQk843fc3hOKZyHLRPzrv6-g4f8a54lyTW4_LOuik9FhAHcfQuM7aKYBFJ43rJHRdNXh/pub" target="me1">AA4 &amp; BAD4</a>
+      </div>
+    </div>
+    <div class="dropdown">
+      <button class="dropbtn">Statistiek</button>
+      <div class="dropdown-content">
+    <a href="https://www.youtube.com/embed/oz6ApcQl9_Q" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen target="me1">Video-Statistiek</a>  
+        <a href="https://docs.google.com/document/d/e/2PACX-1vR6KOFLkYXIlZoNZuha4uoAO7eCcFf6xaIqZPzzZ7RHq6r92eHgJSFo6PY0cmHG1GJmQ2hu3X-sfVOb/pub" target="me1">STAM-L2</a>
+           <a href="https://docs.google.com/document/d/e/2PACX-1vTm199C9aw-Za9BDIbXB6FIWyvG7jwcOBA3RSaFDZ61sglk_Kqm8-PJQauoYVVpphoMxlav4c33eJfn/pub" target="me1">MSTA-NED</a>
+        <a href="https://docs.google.com/document/d/e/2PACX-1vTyR3dAwD2oGHn201TgGYoQBAxbaNiX8n6jUdUziY44VwxPoj4DRz5l5_V3oyMThqoUVemtq6OW78VH/pub" target="me1">MSTA-L2</a>
+        <a href="https://docs.google.com/document/d/e/2PACX-1vROZSoep9SKaNCRmke7PRJen2JCGxT2-70d8uS-QWsid71IlC556TIDSUzDA5Epn4_gow93oADfqSM9/pub" target="me1">MSTA-L3</a>
+    <a href="https://docs.google.com/document/d/e/2PACX-1vSxqto5LHsCvhWb60ifE5_dVivZcTCuv3HZb6KYOVgmt3f4ngSYUuZ556bAYWFUPkRNglwqiM2ZGNmw/pub" target="me1">MSTA-L4</a>
+      </div>
+    </div>
+    
+    
+    <div class="dropdown">
+      <button class="dropbtn">Toerisme</button>
+      <div class="dropdown-content">
+       <a href="https://www.youtube.com/embed/z_EBxR9NrO8" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen target="me1">Video-Toerisme</a>
+           <a href="https://docs.google.com/document/d/e/2PACX-1vQAp-BzYr9VQsIpBaXCR0VFqvS9VM_QJtHsfN59u2X8BsJqd4gc-UQHC0iZPmwmECRmJfvT9s5s8-iu/pub" target="me1">OG-AFMA2&amp;3</a>
+        <a href="https://docs.google.com/document/d/e/2PACX-1vT-jEOTI1m41YpbyeiQNGEIh0-uodcpESqyNee5i6S3m4uP_emO0KSk0DILdZ9CFzJ7RFY07Ejso4K2/pub" target="me1">TO-L2</a>
+        <a href="https://docs.google.com/document/d/e/2PACX-1vS3pZhMUB_RyuL3zZvqgGo9y_wwai2u-hIjrKylTmFAx8CVB8fClBWPjDHR-l0oumf00Eq8igeUJ2QO/pub" target="me1">AFMA2</a>
+        <a href="https://docs.google.com/document/d/e/2PACX-1vSK12Sgejavv5pulmNDFvM6adjeZNKYVW8i9WpOTkkpn0IBpfJAGsVhn7nGhQGLC1ZjWRvfORIHp7BR/pub" target="me1">AFMA-L3</a>
+        <a href="https://docs.google.com/document/d/e/2PACX-1vQNDV6uAYhzRtesUShU5c45kR_be7PD4YHP4f1qCBA8ACb4vXoJDNMnwRdY0BW33E1wrA0_yprvtOLZ/pub" target="me1">FOM-L3</a>
+        <a href="https://docs.google.com/document/d/e/2PACX-1vSM7HgoeBUkfS8Ebnq7NuZO-vf6A7F6C3iiWc73bDSZBX1wqMMc9jJmCRlyj0g5XZi_WkLvore7fMCe/pub" target="me1">AFMA-L4</a>
+    
+      </div>
+    </div>
+    
+    <div class="dropdown">
+      <button class="dropbtn">Marketing</button>
+      <div class="dropdown-content">
+       <a href="https://www.youtube.com/embed/qqXeONXquyY" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen target="me1">Video-Marketing</a>
+             <a href="https://docs.google.com/document/d/e/2PACX-1vSvXEV3tyO6OW9FsON7vK9dFeK2hMGPvSHb2CZUKXApvgYDQpj6afFnRuWj8GZYeefur1dQIkAYr3hE/pub" target="me1">AMMA-NED</a>
+    
+    <a href="https://docs.zoho.com/file/cj60629d7a294238947f0a15aafcfba085566" target="me1">OM-AMMA4</a>
+    <a href="https://docs.zoho.com/file/cj606d7d472348f0f48e99331bc6809c9ee92" target="me1">OPMA-AMMA4</a>
+    
+    
+        <a href="https://docs.google.com/document/d/e/2PACX-1vS06HiU0JqK1esVMCC4DbN3xT4_60xnBOmx4lqGD8TTnQj3Iv1S5eMx0EmzRlSarqc8imtHh9lcCd-f/pub" target="me1">AMMA-L2</a>
+        <a href="https://docs.google.com/document/d/e/2PACX-1vRYbRwU-Aq4AYVZhnlfWJ1uh4P0a3KrrJxDzU5-nc8q7M4zAFJ81RsgtMYgw97Wl27iHUIqPc3-oIx4/pub" target="me1">AMMA-L3</a>
+        <a href="https://docs.google.com/document/d/e/2PACX-1vSxUKA1bSVJ_kOWYinPsKFMDEkk6ToLNnKJ2L8p0v9L5qPCFjcmSLNxUHt9QBEqan6_wQ7tHtVKhUlI/pub" target="me1">AMMA-L4</a>
+        
+      </div>
+    </div>
+    
+    
+    <div class="dropdown">
+      <button class="dropbtn">Secretarieel</button>
+      <div class="dropdown-content">
+          <a href="https://www.youtube.com/embed/yzpWg5cB_Hg" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen target="me1">Video-Secretaresse</a>  
+    
+    <a href="https://docs.zoho.com/file/4zujib66339cdd2954390a3e27d05267d13b9" target="me1">SP-DSEC4/OFMA4</a>
+    
+             <a href="https://docs.zoho.com/file/cfntz36a2c9f97b4b4f05a1ce0b3cd491a377" target="me1">Cur-DIV</a>         
+    
+    <a href="https://docs.zoho.com/file/cj60612590534247d431da2bfa46d0478a706" target="me1">DIV-SEC</a>         
+    
+    <a href="https://docs.google.com/document/d/e/2PACX-1vTJjCP42sKD0elTfcBSwcz3UtfQpMKrJ9VA7TnFgHtvRiJFqL-xvwHLCBuo6gKCzjvBVWRH6CRAJn90/pub" target="me1">OG-OFMA-DSEC2</a>
+       <a href="https://docs.google.com/document/d/e/2PACX-1vQYjAh2hErJR7UqE3Y2OeibFNc2XjF89Dde1x254bI7d-kdOzXDRsk6aGN7SEkGwJKCgspuNbHZA1ER/pub" target="me1">SE-L2</a>
+        <a href="https://docs.google.com/document/d/e/2PACX-1vQPvHZ4R_EJ09jl5rnQyhwwvOjvT_riPnytD5QDJi0t_LkvgKTGRV39kRiRM5Bk79ic0wJEqj50B5QG/pub" target="me1">SEC-L3</a>
+        <a href="https://docs.google.com/document/d/e/2PACX-1vTEpOxcsQAz484MTGGWGAli4YHaz3chbg7LPfROx6gviet5w62u1he4DG8uCcP39ztgx25D6ozUlPFr/pub" target="me1">DSEC/OFMA-L2</a>
+        <a href="https://docs.google.com/document/d/e/2PACX-1vR7VWyAme_FphMk4KgLmqjA1GnhQ4lj9eypqcHhxz4JQaH83i3Jb1T0hyfxa_rJnyWohHLGRPMHlYy8/pub" target="me1">DSEC-L4</a>
+        <a href="https://docs.google.com/document/d/e/2PACX-1vQhBJa7j8Uj19ztGXZ-wFFpVjxADTIx_uSAdd83nIY8G-feailKBHPkmGTrv9Scrj5g_59-8bJWJr4z/pub" target="me1">OFMA-L3</a>
+    <a href="https://docs.google.com/document/d/e/2PACX-1vTOMPQWZZIHRxlIR5rBYYO84tXkiev1N28K_JmhOAc5qspE0P5yH7xE6BJrFdf-ycIuZWiVTvsQmsaP/pub" target="me1">OFMA-L4</a>
+    </div>
+    </div>
+    
+    
+    <div class="dropdown">
+      <button class="dropbtn">Vakken</button>
+      <div class="dropdown-content">
+    <a href="https://docs.google.com/document/d/e/2PACX-1vRfhlygKdpJc7EJOuGaJjke_m5ENbZPHXbXEqQDDPzJd9PPMxDDJBmV4yeUSZCAMr-30jh2Ty_37rG5/pub" target="me1">MAC</a>
+    
+    <a href="https://docs.zoho.com/file/cj606a2112d515d5d4a7c8498c367c385dbbe" target="me1">DIV-AA-BAD-MSTA</a>
+    
+       <a href="https://docs.google.com/document/d/e/2PACX-1vTwK4_BIPR5ubwdrmBvErFzaRW-UapWeanJ81S-DuMZWcWGJIakikfoFAoOkn7ybbADhvphQ0Tyo6PQ/pub" target="me1">RV</a> 
+    <a href="https://docs.google.com/document/d/e/2PACX-1vQIrcuo19Q6DWyoP8XeVDrFJ76tNNRL3Q5u2B-SxX-cIQhNPL96eGQAUW91SaGOzQ94R83QHS-qI4ws/pub" target="me1">MO-amma3</a>
+        <a href="https://docs.google.com/document/d/e/2PACX-1vTOayLJzWJPj8jBDYwsrJMGb7ZwRnQqHSVZf5j9egXXiu8lQZvFvvELf194cKVsR7QJ_F0wP4dDwYpY/pub" target="me1">MA-amma3</a>
+        <a href="https://docs.google.com/document/d/e/2PACX-1vSi3xqATytNDXZ0lk3UjH74MwaALPQ35oAcHQ3e3ZMPR2wLjiKQ_vI5Gnc8cqgSevYgwZYVlNiTl5Xf/pub" target="me1">MA-ofma3</a>
+        <a href="https://docs.google.com/document/d/e/2PACX-1vSocvvv5tu7l2ITJToakjNV5LgfaQb7P-s3noyfCqgbGScERFB05bXWuPixytcz1k_hFeBb_q_zJFZ-/pub" target="me1">MO-ofma3</a>
+        <a href="https://docs.google.com/document/d/e/2PACX-1vSlOQ05HlXi5AFqLQxDyEYnOOIqyypmRzT5JXeS4cZ31wpFKSrcQAfZxqdmyxx0h3s3z6lNjhj91OgC/pub" target="me1">MA-amma4</a>
+    <a href="https://docs.google.com/document/d/e/2PACX-1vS5XJNyAB_vOCvctFgzcNLqWBlV-5l3HrPLg2Snkz07awLuCUmLWQ-0jchChfBjSBwmoboD1FB6FeiL/pub" target="me1">MA-ofma4</a>
+    <a href="https://docs.google.com/document/d/e/2PACX-1vTSMIMDY_yRr93PO7Fw78M7jBuWudRIWGdlC78KoOIx3c3ZcTQOOgfABsxmkIY8tGrX3iQ1hSZxpPP6/pub" target="me1">MA-amma2</a>
+    <a href="https://docs.google.com/document/d/e/2PACX-1vTEH_gVwNTZ3dBbVlFj09PG2uXDBJD8vlBnrEoJC7BcMvDr6CHZdujKGMyiSpo6KIbNpjmigBcCEGnn/pub" target="me1">MMO-ofma2</a>
+    <a href="https://docs.google.com/document/d/e/2PACX-1vQQJ0Yu65wMyGm5XggfiR1wc7y3Tb3VSvr7_5mTC6SQSBOVBYY5AZiijjuUliL4IGb0IqqV_o4lft0P/pub" target="me1">MO-aa4</a>
+    <a href="https://docs.google.com/document/d/e/2PACX-1vRLA59GZzZZiowMm-FdOrRgx4Rw_R94bIW9X3F-BtlCLOOqQEkWX03j42ElsmumBVCxarAikYoYwc6y/pub" target="me1">MO-afma4</a>
+    <a href="https://docs.google.com/document/d/e/2PACX-1vTN_dA3UkxbpQDi4bjXmQ93xWT657fCSOkZYW1j_FWvmy5rzwy4P7MYFn_mf3s8_UMKFG-oTX6Z5EU3/pub" target="me1">MO-bad4</a>
+    <a href="https://docs.google.com/document/d/e/2PACX-1vSO-p6BVxAXsvgCvgjNrvA0DbiuYyJ7OTfFAJ1vdC-JElc1qvYmX3JUg5rUtvIvdeC55luF5ReiTd4c/pub" target="me1">MO-ofma4</a>
+    <a href="https://docs.google.com/document/d/e/2PACX-1vRDgoERyGemi7QRjZ_aNgNSNZTYD68fjemnBWSbH5dUnikyHyPgBUVXapV5Ubu6uC8tMNvbBXIvcp_K/pub" target="me1">MV-afma3</a>
+    
+    <a href="https://docs.google.com/document/d/e/2PACX-1vSHKdu1o47QeBB417tSPWlBQwkJY7WW1ZtDR8nGtyYsiwFeL0WF5Y4mNELQnOP73AntEpXuK0s5HOvl/pub" target="me1">SM-amma4</a>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    </div>
+    </div>
+    
+      </center>
+    
+    
+    
+    <center>
+    <font color="blue" size="4">
+    
+    
+    
+    
+    
     <body>
-        <style type="text/css">
-body {
-    background-color: #FBF2EF;
-}
-
-iframe { background-color:white; }
-<style>
-body {
-    margin: 0;
-}
-
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    width: 12%;
-    background-color: #f1f1f1;
-    position: fixed;
-    height: 50%;
-    overflow: auto;
-}
-ul {
-    list-style-type: none;
-    margin: 2px solid #333;
-    padding: 0;
-    overflow: hidden;
-    background-color:  lightgray ;
-}
-.main-wrapper {
-    margin: 0 auto;
-    width: 1000px;
-}
-
-a {
-    text-decoration:none;
-}
-body{
-    background-color: beige;
-}
-
-li {
-    float: left;
-    border-right:2px solid #FFA500;
-}
-
-li:last-child {
-    border-right: 2px solid #FFA500;
-}
-
-li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-}
-
-li a:hover:not(.active) {
-    background-color: #111;
-}
-
-.active {
-    background-color: lightgray;
-}
-</style>
-
-</head>
-<style>
-ul {
-    list-style-type: none;
-    margin: 2px solid #333;
-    padding: 0;
-    overflow: hidden;
-    background-color: #fff;
-}
-
-li {
-    float: left;
-    border-right:2px solid #fff;
-}
-
-li:last-child {
-    border-right: 2px solid #fff;
-}
-
-li a {
-    display: block;
-    color: #f0f;
-    text-align: center;
-    padding: 6px 8px;
-    text-decoration: none;
-}
-#rotating-item-wrapper {
-    position: relative;
-    width: 80px;
-    height: 87px;
-}
-.rotating-item {
-    display: none;
-    position: absolute;
-    top: 0;
-    left: 0;
-</style>
-
-<script>
-$(window).load(function() { //start after HTML, images have loaded
- 
-    var InfiniteRotator =
-    {
-        init: function()
-        {
-            //initial fade-in time (in milliseconds)
-            var initialFadeIn = 1000;
- 
-            //interval between items (in milliseconds)
-            var itemInterval = 6000;
- 
-            //cross-fade time (in milliseconds)
-            var fadeTime = 2500;
- 
-            //count number of items
-            var numberOfItems = $('.rotating-item').length;
- 
-            //set current item
-            var currentItem = 0;
- 
-            //show first item
-            $('.rotating-item').eq(currentItem).fadeIn(initialFadeIn);
- 
-            //loop through the items
-            var infiniteLoop = setInterval(function(){
-                $('.rotating-item').eq(currentItem).fadeOut(fadeTime);
- 
-                if(currentItem == numberOfItems -1){
-                    currentItem = 0;
-                }else{
-                    currentItem++;
-                }
-                $('.rotating-item').eq(currentItem).fadeIn(fadeTime);
- 
-            }, itemInterval);
-        }
-    };
- 
-    InfiniteRotator.init();
- 
-});
-
-
-
-</script>
-
-
-
-
-</ul></center>
-
-</body>
-</html>
-
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-.container {
-  position: relative;
-  width: 50%;
-}
-
-.image {
-  display: block;
-  width: 20%;
-  height: auto;
-}
-
-.overlay {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background-color: #008CBA;
-  overflow: hidden;
-  width: 100%;
-  height: 100%;
-  -webkit-transform:scale(0);
-  transition: .3s ease;
-}
-
-.container:hover .overlay {
-  transform: scale(1)
-}
-
-.text {
-  color: white;
-  font-size: 20px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  text-align: center;
-}
-</style>
-</head>
-
-<style>
-            .round {
-                border-radius: 50%;
-                overflow: hidden;
-                width: 100px;
-                height: 100px;
-            }
-            .round img {
-                display: block;
-            /* Stretch 
-                  height: 50%;
-                  width: 50%; */
-            min-width: 50%;
-            min-height: 50%;
-            }
-        </style>
+    <br>
+    <FONT FACE="bold ARIAL" SIZE="5" COLOR="darkgreen">
+    <form>
+    <input type="button" value="Previous" onclick="history.go(-1)">
+    </form>
+    <iframe width="75%" height="480px" src="https://www.thoughtco.com/thmb/rzy_gH9rZF6wsNe32cSON9-V8yI=/768x0/filters:no_upscale():max_bytes(150000):strip_icc()/GettyImages-83736527-581025265f9b58564c96bf55.jpg" frameborder="0" scrolling="yes" name="me1" id="me1">
+    <p> Uw browser support geen kijk-venster helaas!</p></iframe>
+    <br>
+    
+    <FONT FACE="bold ARIAL" SIZE="4" COLOR="darkgreen">
+    <button onclick="JavaScript:alert(&#39;Voor historische informatie omtrent het IMEAO, kunt u het boek DE LEERLING MAAKT DE MEESTER kopen. Bel 00597 8780481&#39;)">
+    Klik Historie</button>
+    
+    <script type="text/javascript">function zforms_open_window(url, height, width){var leftPos = 0;var topPos = 0;if(screen){leftPos = (screen.width - width) / 2;topPos = (screen.height - height) / 2;window.open(url, null, 'width='+width+',height='+height+',left='+leftPos+',top='+topPos+', toolbar=0, location=0, status=1, scrollbars=1, resizable=1');}}</script><a href="https://docs.zoho.com/file/0any69f1d0ae09d1b4e3bb76701263fd209d0" title="Kijk" target="_blank" onclick="zforms_open_window(this.href, 880, 950); return false">||Factuur (PO-2de klas)</a>    
+    
+    <a href="https://www.youtube.com/embed/o2VHTYjuSd0" title="YouTube video player" target="me1">||Leerweg MBO</a>
+    
+    
+    
+    <a href="https://docs.zohopublic.com/file/c583bb4b659f003014610b49e431c5e497352" target="me1">||Doorstromingsdocument</a>
+    
+    <a href="https://docs.google.com/document/d/e/2PACX-1vQ4glIfd0yU9yk4mqm3422XExRkDZL1GSDQxo4Z8ixHH0u0tOxBsvEjZRHil7np_UuMsDzGZKA6cZNz/pub" target="me1">||Kwalificatiedossier||</a>
+    <BR>
+    <script type="text/javascript">function zforms_open_window(url, height, width){var leftPos = 0;var topPos = 0;if(screen){leftPos = (screen.width - width) / 2;topPos = (screen.height - height) / 2;window.open(url, null, 'width='+width+',height='+height+',left='+leftPos+',top='+topPos+', toolbar=0, location=0, status=1, scrollbars=1, resizable=1');}}</script><a href="https://www.google.de/maps/search/imeao-scholen/@5.8522097,-55.1633774,13z" title="Kijk" target="_blank" onclick="zforms_open_window(this.href, 880, 950); return false">||Lokatie scholen</a>
+    
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+    .dropbtn {
+        background-color:  white ;
+        color: blue;
+        padding: 16px;
+        font-size: 16px;
+        border: none;
+    }
+    iframe { background-color:#fdedec; }
+    .dropdown {
+        position: relative;
+        display: inline-block;
+    }
+    
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f1f1f1;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+    }
+    
+    .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+    }
+    
+    .dropdown-content a:hover {background-color: white;}
+    
+    .dropdown:hover .dropdown-content {display: block;}
+    
+    .dropdown:hover .dropbtn {background-color: white;}
+    </style>
     </head>
     
- 
-  
-</div>
-
-</body>
-<header>
-
-
-
-
-
-
-
-<style>
-#rotating-item-wrapper {
-    position: relative;
-    width: 80px;
-    height: 87px;
-}
-.rotating-item {
-    display: none;
-    position: absolute;
-    top: 0;
-    left: 0;
-</style>
-
-<script>
-$(window).load(function() { //start after HTML, images have loaded
- 
-    var InfiniteRotator =
-    {
-        init: function()
-        {
-            //initial fade-in time (in milliseconds)
-            var initialFadeIn = 1000;
- 
-            //interval between items (in milliseconds)
-            var itemInterval = 6000;
- 
-            //cross-fade time (in milliseconds)
-            var fadeTime = 2500;
- 
-            //count number of items
-            var numberOfItems = $('.rotating-item').length;
- 
-            //set current item
-            var currentItem = 0;
- 
-            //show first item
-            $('.rotating-item').eq(currentItem).fadeIn(initialFadeIn);
- 
-            //loop through the items
-            var infiniteLoop = setInterval(function(){
-                $('.rotating-item').eq(currentItem).fadeOut(fadeTime);
- 
-                if(currentItem == numberOfItems -1){
-                    currentItem = 0;
-                }else{
-                    currentItem++;
-                }
-                $('.rotating-item').eq(currentItem).fadeIn(fadeTime);
- 
-            }, itemInterval);
-        }
-    };
- 
-    InfiniteRotator.init();
- 
-});
-
-
-
-</script>
-
-
-
-
-</ul></center>
-
-</body>
-</html>
-
-
-<FONT FACE="bold ARIAL" SIZE=4 COLOR="white">
-<center>
-<font color="green">
-<p id="demo"></p>
-
-<style>
-            .round {
-                border-radius: 50%;
-                overflow: hidden;
-                width: 250px;
-                height: 175px;
-            }
-            .round img {
-                display: block;
-            /* Stretch 
-                  height: 100%;
-                  width: 100%; */
-            min-width: 100%;
-            min-height: 100%;
-            }
-        </style>
-    </head>
-
-<meta charset="utf-8">
-
-
-<head>
-<title>VEFRA Consultancy</title>
-</head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-.container {
-  position: relative;
-  width: 50%;
-}
-
-.image {
-  display: block;
-  width: 20%;
-  height: auto;
-}
-
-.overlay {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background-color: #008CBA;
-  overflow: hidden;
-  width: 100%;
-  height: 100%;
-  -webkit-transform:scale(0);
-  transition: .3s ease;
-}
-
-.container:hover .overlay {
-  transform: scale(1)
-}
-
-.text {
-  color: white;
-  font-size: 20px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  text-align: center;
-}
-</style>
-</head>
-
-<style>
-            .round {
-                border-radius: 50%;
-                overflow: hidden;
-                width: 100px;
-                height: 100px;
-            }
-            .round img {
-                display: block;
-            /* Stretch 
-                  height: 50%;
-                  width: 50%; */
-            min-width: 50%;
-            min-height: 50%;
-            }
-        </style>
-    </head>
     
- 
-  
-</div>
-
-</body>
-  
-
-
-
-
-
-
-<center>
-<p>
-<FONT FACE="bold ARIAL" SIZE=4 COLOR=green>
-
- 
-<form>
-<input type ="button"
-value="Previous"
-onclick="history.go(-1)">
-</form>
-<iframe width="75%" height="500px" src = "https://forms.zohopublic.com/frfrpa/form/IMEAO2Werkstukken/formperma/3MM6bCdE16J1105mE63d0AmD2"  style="float: center" scrolling = "yes"  name="me1" id="me1">
-<p> Uw browser support geen kijk-venster helaas!</p></iframe>
-
-<br>
-<center>
-<BR>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-.dropbtn {
-    background-color: #FA58AC;
-    color: white;
-    padding: 16px;
-    font-size: 16px;
-    border: none;
-}
-
-.dropdown {
-    position: relative;
-    display: inline-block;
-}
-iframe { background-color:#fdedec; }
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f1f1f1;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-}
-
-.dropdown-content a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-}
-
-.dropdown-content a:hover {background-color: #f5b7b1;}
-
-.dropdown:hover .dropdown-content {display: block;}
-
-.dropdown:hover .dropbtn {background-color: darkred;}
-</style>
-</head>
-<body>
-
-<CENTER>
-<div class="dropdown">
-  <button class="dropbtn">Correctie-Model</button>
-  <div class="dropdown-content">
-<a href="https://c4cqk649.caspio.com/dp/992650000ef4c6b487b94b4491c5" target="me1">Relexie-MSTA3</a>
-
-<a href="https://docs.zoho.com/file/dbiu15af1ce0432f943ea86f73c5ad70a64ae" target="me1">BS-M2-AMMA2</a>
-<a href="https://docs.zoho.com/file/dbiu11c52c6c873c84ba7a4397bcd4c390710" target="me1">CR-M2-MSTA2</a>
-
-<a href="https://docs.zoho.com/file/dbiu198dd03f7cabd4ab48245bb7784fabaf6" target="me1">VA-M2-MSTA3</a>
-<a href="https://docs.zoho.com/file/dbiu1212cfec1e7db4a999419980eb56fa719" target="me1">RC-M2-MSTA4</a>
-
-<a href="https://docs.zoho.com/file/dbiu1bbe378877a7b45bb9ba7d4e51d58ea43" target="me1">VA-M2-MSTA4</a>
-
-</div>
-</div>
-<div class="dropdown">
-  <button class="dropbtn">Studenten</button>
-  <div class="dropdown-content">
-
-<a href="https://docs.zohopublic.com/file/c583bb4b659f003014610b49e431c5e497352" target = "me1">Doorstromingsdocument</a>
-
-<a href="https://drive.google.com/open?id=1FJ-pMe8uw9-p-lVqUxqo2Ii69Qh99IKJovrGZR5mQoo" target="me1">Huiswerk</a>
-
-
-    <a href="https://forms.zohopublic.com/frfrpa/form/IMEAO2Werkstukken/formperma/3MM6bCdE16J1105mE63d0AmD2" target="me1">Upload WS</a>
-
-    <a href="https://docs.zoho.com/file/b5cpga59f2c1d1cc34a20a69fc126daa39cc8" target="me1">AMMA2 T1</a>
-    <a href="https://docs.zoho.com/file/btau084f076c585a94fd38db14baed9a6345f" target="me1">AMMA2 T1 CM</a>
     
- </div>
-</div>
-<div class="dropdown">
-  <button class="dropbtn">LINGO</button>
-  <div class="dropdown-content">
-
-<a href="https://www.digipuzzle.net/minigames/lingo/lingo_yurlsnet.htm" target="me1">Lingo</a>
-
-<script type="text/javascript">function zforms_open_window(url, height, width){var leftPos = 0;var topPos = 0;if(screen){leftPos = (screen.width - width) / 2;topPos = (screen.height - height) / 2;window.open(url, null, 'width='+width+',height='+height+',left='+leftPos+',top='+topPos+', toolbar=0, location=0, status=1, scrollbars=1, resizable=1');}}</script><a href='https://drive.google.com/open?id=1X-dmv0_gRLlIgCatUqgmcme4R6_dfswACUz6ZF-2OLI' title="Quiz" target='_blank' onclick="zforms_open_window(this.href, 880, 950); return false">Quiz-1</a>    
-<script type="text/javascript">function zforms_open_window(url, height, width){var leftPos = 0;var topPos = 0;if(screen){leftPos = (screen.width - width) / 2;topPos = (screen.height - height) / 2;window.open(url, null, 'width='+width+',height='+height+',left='+leftPos+',top='+topPos+', toolbar=0, location=0, status=1, scrollbars=1, resizable=1');}}</script>
-<a href='https://drive.google.com/open?id=1Lb7w80CHKVQpPvmNYumKijkZZQzIf5yDiNWpxa1BzCI' title="Quiz" target='_blank' onclick="zforms_open_window(this.href, 880, 950); return false">Quiz-2</a> 
-
-
-</div>
-</div>
-
-<div class="dropdown">
-  <button class="dropbtn">Studies IMEAO</button>
-  <div class="dropdown-content">
-<script type="text/javascript">function zforms_open_window(url, height, width){var leftPos = 0;var topPos = 0;if(screen){leftPos = (screen.width - width) / 2;topPos = (screen.height - height) / 2;window.open(url, null, 'width='+width+',height='+height+',left='+leftPos+',top='+topPos+', toolbar=0, location=0, status=1, scrollbars=1, resizable=1');}}</script><a href='https://youtu.be/8wHnvUxyTAc' title="Huiswerk-Opdracht posten" target='_blank' onclick="zforms_open_window(this.href, 880, 950); return false">BAD</a>
-<script type="text/javascript">function zforms_open_window(url, height, width){var leftPos = 0;var topPos = 0;if(screen){leftPos = (screen.width - width) / 2;topPos = (screen.height - height) / 2;window.open(url, null, 'width='+width+',height='+height+',left='+leftPos+',top='+topPos+', toolbar=0, location=0, status=1, scrollbars=1, resizable=1');}}</script><a href='https://youtu.be/zUG0tcHks34' title="Huiswerk-Opdracht posten" target='_blank' onclick="zforms_open_window(this.href, 880, 950); return false">AA</a>
-<script type="text/javascript">function zforms_open_window(url, height, width){var leftPos = 0;var topPos = 0;if(screen){leftPos = (screen.width - width) / 2;topPos = (screen.height - height) / 2;window.open(url, null, 'width='+width+',height='+height+',left='+leftPos+',top='+topPos+', toolbar=0, location=0, status=1, scrollbars=1, resizable=1');}}</script><a href='https://youtu.be/di5x5DEvlSI' title="Huiswerk-Opdracht posten" target='_blank' onclick="zforms_open_window(this.href, 880, 950); return false">Secretarieel</a>
-<script type="text/javascript">function zforms_open_window(url, height, width){var leftPos = 0;var topPos = 0;if(screen){leftPos = (screen.width - width) / 2;topPos = (screen.height - height) / 2;window.open(url, null, 'width='+width+',height='+height+',left='+leftPos+',top='+topPos+', toolbar=0, location=0, status=1, scrollbars=1, resizable=1');}}</script><a href='https://youtu.be/z_EBxR9NrO8' title="Huiswerk-Opdracht posten" target='_blank' onclick="zforms_open_window(this.href, 880, 950); return false">Toerisme</a>
-<script type="text/javascript">function zforms_open_window(url, height, width){var leftPos = 0;var topPos = 0;if(screen){leftPos = (screen.width - width) / 2;topPos = (screen.height - height) / 2;window.open(url, null, 'width='+width+',height='+height+',left='+leftPos+',top='+topPos+', toolbar=0, location=0, status=1, scrollbars=1, resizable=1');}}</script><a href='https://youtu.be/QmRYQFwhJW4' title="Huiswerk-Opdracht posten" target='_blank' onclick="zforms_open_window(this.href, 880, 950); return false">Beroep v/d Toekomst</a>
-<script type="text/javascript">function zforms_open_window(url, height, width){var leftPos = 0;var topPos = 0;if(screen){leftPos = (screen.width - width) / 2;topPos = (screen.height - height) / 2;window.open(url, null, 'width='+width+',height='+height+',left='+leftPos+',top='+topPos+', toolbar=0, location=0, status=1, scrollbars=1, resizable=1');}}</script><a href='https://youtu.be/i1xz5Kv-7VY' title="Huiswerk-Opdracht posten" target='_blank' onclick="zforms_open_window(this.href, 880, 950); return false">Intro Marketing</a>
-
-
- </div>
-</div>
-
-
-
-<div class="dropdown">
-  <button class="dropbtn">Inputs Juf</button>
-  <div class="dropdown-content">
+    <title>W3.CSS</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="">
+    <style>
+    .city {display:none}
+    </style>
+    <BR>
     
-<script type="text/javascript">function zforms_open_window(url, height, width){var leftPos = 0;var topPos = 0;if(screen){leftPos = (screen.width - width) / 2;topPos = (screen.height - height) / 2;window.open(url, null, 'width='+width+',height='+height+',left='+leftPos+',top='+topPos+', toolbar=0, location=0, status=1, scrollbars=1, resizable=1');}}</script><a href='http://rpubs.com/paulf/392078' title="Toegang" target='_blank' onclick="zforms_open_window(this.href, 880, 950); return false">Mededeling</a>
-
-<script type="text/javascript">function zforms_open_window(url, height, width){var leftPos = 0;var topPos = 0;if(screen){leftPos = (screen.width - width) / 2;topPos = (screen.height - height) / 2;window.open(url, null, 'width='+width+',height='+height+',left='+leftPos+',top='+topPos+', toolbar=0, location=0, status=1, scrollbars=1, resizable=1');}}</script><a href='https://drive.google.com/open?id=1ynuhDLF1ZCaEVTRzl_UnnojlmHTz9Jb16eu3k1QU6ac' title="Toegang" target='_blank' onclick="zforms_open_window(this.href, 880, 950); return false">Toegang juf</a>
-
-  </div>
-</div>
-
-<BR><BR><CENTER>
-
-<font size="3">
-<style>
-table, th, td {
-    border: 1px solid darkgreen;
-}
-</style>
-
-<table>
-
-<tr><th>Uw Koopkracht </th></tr>
-
-<tr>
-<td><head>
-
-
-<center>
-<p> CPI is Consumenten Prijs Index<br> CPI(juli 2020 = 197.6)</p>
-<form name="frForm">
-Mijn Netto Loon: <input type="text" name="weight" size="10">
-
-<br><BR>
-
-<input type="button" value="Bereken mijn Koopkracht" onClick="calculateFr()"><BR><BR>
-Huidige Waarde van mijn Netto Loon: <input type="text" name="fr" size="15">
-<BR><BR>
-<input type="reset" value="Reset" />
-</form>
-
-
-</body>
-
-
-<script language="JavaScript">
-<!--
-function calculateFr() {
-var weight = document.frForm.weight.value
-if(weight > 0 ){    
-var finalFr = (weight*100)/197.6 
-document.frForm.fr.value = Math.round(finalFr)
-
-}
-else{
-alert("Vul de gegevens volledig in. Succes. Juf Kross")
-}
-}
-//-->
-</script></td></tr>
-</table>
-<br>
-<center>
-
-
-<center>
-<div id="footer">
-<p> Copyright 2017 <a href="http://www.smtutot.com/html5" target="_blank" >VEFRA </a> All rights reserved.</p>
-</center>
-<br>
- <!-- Start of CuterCounter Code -->
-<a href="http://www.cutercounter.com/" target="_blank"><img src="http://www.cutercounter.com/hit.php?id=11225&nd=7&style=65" border="0" alt="free counter"></a>
-<!-- End of CuterCounter Code -->
-
-<br>
-  
-
-</html>
-<BR>
-
-
-
-
+    
+     </div>
+    </div>
+    
+    </div>
+    
+    <script>
+    document.getElementsByClassName("tablink")[0].click();
+    
+    function openCity(evt, cityName) {
+      var i, x, tablinks;
+      x = document.getElementsByClassName("city");
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+      }
+      tablinks = document.getElementsByClassName("tablink");
+      for (i = 0; i < x.length; i++) {
+        tablinks[i].classList.remove("w3-light-grey");
+      }
+      document.getElementById(cityName).style.display = "block";
+      evt.currentTarget.classList.add("w3-light-grey");
+    }
+    </script>
+    
+    
+    <BR><BR>
+    
+    
+    
+    
+    <body>
+    
+    
+    
+    <BR><BR>
+    <center>
+    <font size="3">
+    <style>
+    table, th, td {
+        border: 1px solid darkgreen;
+    }
+    </style>
+    
+    <table bgcolor="white">
+    
+    <tr><th>Uw BMI</td><th>Uw Koopkracht </th></tr>
+    
+    <tr><td><center>
+    <p> Heb je een Gezond gewicht? (Note: Betekenis is volgens de WHO)</p>
+    <form name="umiForm">
+    Uw gewicht(kg): <input type="text" name="weight" size="10"> 
+    Uw lengte(cm): <input type="text" name="height" size="10"> <br /><br />
+    <input type="button" value="Bereken BMI" onClick="calculateUmi()"><br /><br />
+    Uw BMI: <input type="text" name="umi" size="10"> <BR><BR>Betekenis uw BMI: <input type="text" name="meaning" size="28"> <BR><BR>
+    <input type="reset" value="Reset"></input>
+    </form>
+    
+    
     </body>
-<BR><BR>
-<center>
-</font>
-<button onclick="JavaScript:alert('We verzorgen bijlessen in Wiskunde, Kansrekenen en Statistiek. Ook het opzetten en beheren van online cijfer-invoersystemen, maken van roosters, data-analyses met Excel, SPSS & R, voor uw verslag en/of thesis.Verder stellen we online auto-correctie Toetsen & Examens op.')">
-Klik hier voor meer Info..</button>
-
-<BR><BR>
-
-
-<center>
-
-
-
-</html>
+    
+     
+    
+    
+    <script language="JavaScript">
+    <!--
+    function calculateUmi() {
+    var weight = document.umiForm.weight.value
+    var height = document.umiForm.height.value
+    if(weight > 0 && height > 0){   
+    var finalUmi = weight/(height/100*height/100)
+    document.umiForm.umi.value = Math.round(finalUmi)
+    if(finalUmi < 18.5){
+    document.umiForm.meaning.value = "U hebt Ondergewicht."
+    }
+    if(finalUmi > 18.5 && finalUmi < 25){
+    document.umiForm.meaning.value = "U hebt Normaal gewicht."
+    }
+    if(finalUmi > 25 && finalUmi < 30){
+    document.umiForm.meaning.value = "U hebt Overgewicht."
+    }
+    if(finalUmi > 30 && finalUmi < 35){
+    document.umiForm.meaning.value = "U hebt Ernstig Overgewicht."
+    }
+    if(finalUmi > 35){
+    document.umiForm.meaning.value = "U hebt Zeer Ernstig Overgewicht."
+    }
+    
+    }
+    else{
+    alert("Please Fill in everything correctly")
+    }
+    }
+    //-->
+    </script>
+    
+    
+    </td>
+    
+    <td><head>
+    
+    
+    <center>
+    <p> CPI is Consumenten Prijs Index<br> CPI(juli 2020 = 197.6)</p>
+    <form name="frForm">
+    Uw Netto Loon: <input type="text" name="weight" size="10">
+    <br><BR>
+    
+    <input type="button" value="Bereken Koopkracht" onClick="calculateFr()"><BR><BR>
+    Reëel Loon (Koopkracht): <input type="text" name="fr" size="15">
+    <BR><BR>
+    <input type="reset" value="Reset"></input>
+    </form>
+    
+    
+    </body>
+    
+    
+    <script language="JavaScript">
+    <!--
+    function calculateFr() {
+    var weight = document.frForm.weight.value
+    if(weight > 0){ 
+    var finalFr = (weight*100)/197.6 
+    document.frForm.fr.value = Math.round(finalFr)
+    
+    }
+    else{
+    alert("Vul de gegevens volledig in. Succes. Juf Kross")
+    }
+    }
+    //-->
+    </script></td></tr>
+    </table><br>
+    </script>
+    </body>
+    <BR>
+    
+    
+    </html>
+    
+    
+    <p><b>EINDE</b></p>
+    <hr color="green">
+    <hr color="yellow">
+    <hr color="red">
+    </html>
+    
