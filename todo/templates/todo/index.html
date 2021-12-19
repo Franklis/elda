@@ -23,8 +23,8 @@
                 <div class="collapse navbar-collapse" id="navbarToggle">
                   <div class="navbar-nav mr-auto" style="color:black">
 		    <a class="nav-item nav-link" style="color:blue" href="{% url 'Home' %}">Home</a>
-                    <a class="nav-item nav-link" style="color:blue" href="{% url 'home' %} ">IMEAO</a>
-                    <a class="nav-item nav-link" style="color:blue" href="{% url 'new' %} ">Index</a>
+                    <a class="nav-item nav-link" style="color:blue" href="{% url 'home' %} ">IMEAO-curricula</a>
+                    <a class="nav-item nav-link" style="color:blue" href="{% url 'new' %} ">Indexcijfers</a>
                     <a class="nav-item nav-link" style="color:blue" href="{% url 'base' %} ">Wiskunde</a>
                   </div>
                   </div>
@@ -37,7 +37,7 @@
             <div class="row">
                 <div class="col-12">
                     <div class="card border-info mb-3" >
-                        <div class="card-header text-center">Taken IMEAO</div>
+                        <div class="card-header text-center">Topics IMEAO</div>
                             <div class="card-body text-info">
                                 
                                 {% if updateForm %}
@@ -57,7 +57,7 @@
                                         <div class="input-group mb-3 shadow bg-white">
                                             {{ form.task }}
                                             <div class="input-group-append">
-                                                <button class="btn btn-outline-secondary" type="submit" id="button-addon2">Add Task</button>
+                                                <button class="btn btn-outline-secondary" type="submit" id="button-addon2">Add Topic</button>
                                             </div>
                                         </div>
                                     </form>
@@ -65,7 +65,7 @@
 
                                 <div class="row mt-4">
                                     <div class="col-8">
-                                        <h3 class="card-title">Tasks</h3>
+                                        <h3 class="card-title">Topic</h3>
                                     </div>
                                     <div class="col-2">
                                         <a href="{% url 'ToDo:Delete all Completed' %}">
